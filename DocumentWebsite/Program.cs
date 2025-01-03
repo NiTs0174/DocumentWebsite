@@ -25,6 +25,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 // ID----------------------------
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultTokenProviders().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>();
 
+Console.WriteLine("Hello from branch1!");
+
 // Google Authentication ------------------
 //builder.Services.AddAuthentication(options =>
 //{
