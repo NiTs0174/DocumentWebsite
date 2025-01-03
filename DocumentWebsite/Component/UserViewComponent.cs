@@ -1,9 +1,9 @@
 ﻿using DocumentWebsite.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-namespace BookWeb.Component
+namespace DocumentWebsite.Component
 {
-    public class UserViewComponent: ViewComponent
+    public class UserViewComponent : ViewComponent
     {
         private readonly UserManager<ApplicationUser> _userManager;
 
@@ -17,6 +17,6 @@ namespace BookWeb.Component
             var user = await _userManager.GetUserAsync(UserClaimsPrincipal);
             var fullName = !string.IsNullOrEmpty(user.FullName) ? $" {user.FullName}" : "Tài khoản";
             return View("Default", fullName);
-        }       
+        }
     }
 }
