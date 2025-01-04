@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-//
+// XỬ LÝ CONFILCT
 // Add services to the container.
 builder.Services.AddSession(options =>
 {
@@ -25,6 +25,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 // ID----------------------------
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultTokenProviders().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>();
 
+Console.WriteLine("Hello from branch1!");
+
 // Google Authentication ------------------
 //builder.Services.AddAuthentication(options =>
 //{
@@ -37,7 +39,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultTokenPro
 //    options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
 //    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
 //});
-
+// Xử Lý Conflicts khi đăng nhập bằng Google 11111
 // MAIL SERVER ------------------
 //// Cấu hình dịch vụ gửi mail, giá trị Inject từ appsettings.json
 //builder.Services.AddOptions();                                              // Kích hoạt Options
