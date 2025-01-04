@@ -39,7 +39,7 @@ Console.WriteLine("Hello from branch1!");
 //    options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
 //    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
 //});
-
+// Xử Lý Conflicts khi đăng nhập bằng Google
 // MAIL SERVER ------------------
 //// Cấu hình dịch vụ gửi mail, giá trị Inject từ appsettings.json
 //builder.Services.AddOptions();                                              // Kích hoạt Options
